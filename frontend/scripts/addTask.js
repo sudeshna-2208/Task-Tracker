@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentTaskId = null; // To track the task being edited
 
-    const baseURL = "https://task-tracker-backend-sjkf.onrender.com"; // Deployed backend URL
+    const baseURL = "https://task-tracker-backend-1-r1ge.onrender.com"; // Deployed backend URL
 
     // Fetch tasks based on priority filter
     const fetchTasks = async (priority = 'all') => {
