@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Task</title>
+    <link rel="stylesheet" href="./styles/addTask.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="./resource/main.png" alt=""></a>
+        <h1 class="headtext">Add Task</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="taskList.html">Task Details</a>
+            <a href="addTask.html">Add Task</a>
+            
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-moon">🌙</i>
+                  <i class="fas fa-sun">☀️</i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+        </nav>
+    </header>
+    
+    <div id="filters">
+        <select id="priority-filter">
+            <option value="all">All</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+    </div>
+    
+    <button id="add-task-btn">Add Task</button>
+
+    <div id="add-task-form" style="display: none;">
+        <h2>Add New Task</h2>
+        <form id="task-form">
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <textarea id="task-description" placeholder="Task Description" required></textarea>
+            <select id="task-priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date" id="task-due-date" required>
+            <button type="submit" class="bubbly-button">Save Task</button>
+            <button type="button" id="cancel-btn" class="bubbly-button">Cancel</button>
+        </form>
+    </div>
+
+    <div id="task-list"></div>
+
+    <div id="edit-task-form" style="display: none;">
+        <h2>Edit Task</h2>
+        <form id="edit-task-form-fields">
+            <input type="text" id="edit-task-name" placeholder="Task Name" required>
+            <textarea id="edit-task-description" placeholder="Task Description" required></textarea>
+            <select id="edit-task-priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date" id="edit-task-due-date" required>
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+    </div>
+
+    <footer id="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Task Management App. All rights reserved.</p>
+            <nav class="footer-nav">
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/addTask.js"></script>
+</body>
+</html>

@@ -1,0 +1,614 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  margin-top: 50px;
+  padding: 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img{
+    
+    height: 100px;
+    width: auto;
+}
+
+.headtext{
+    font-family: serif;
+    font-size: 40px;
+    margin-left: 10px;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure items are vertically centered */
+    background: #e7e1e1;
+    width: 100%;
+    top: 0; /* Ensure it's at the top */
+    z-index: 10; /* Make sure it stays on top */
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+body.dark {background-color: #000000;} /* #9b59b6 */
+
+.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #000000;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+
+
+
+
+
+
+/*  Support me if you like it */
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #000000;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+}
+
+nav{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;      
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-size: 25px;
+}
+ 
+  /* .headtext{
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: lights 5s 750ms linear infinite;
+  } */
+
+/* Main container for task tracker */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+} */
+.herosec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;  /* Add a gap between columns */
+  padding: 100px;
+}
+
+@media (max-width: 768px) {
+  .herosec {
+    grid-template-columns: 1fr; /* Stacks items vertically on small screens */
+  }
+}
+
+.hero1{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  color: #fff;
+  /* text-align: center; */
+}
+
+@media (max-width: 768px) {
+  .herosec {
+    grid-template-columns: 1fr; /* Stacks the items vertically on smaller screens */
+    padding: 20px;
+  }
+  
+  .hero1, .hero2 {
+    padding: 20px;
+  }
+}
+
+.hero2{
+  padding: 40px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center;  */
+  color: #fff;
+}
+
+.he2 {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #10e758; /* the color */
+  
+  color: #0179dbfa;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#e90303 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+
+.he2:hover {
+  --_p: 100%;
+}
+
+
+.he2 {
+  font-family: system-ui, sans-serif;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.hero2 p{
+  color: red;
+  font-size: 20px;
+}
+
+
+
+.animatedtext{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding-left: 100px;  */
+
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #ec1111;
+  font-family: Roboto, Arial, sans-serif;
+  height: 500px;
+  /* left: 50%; */
+  /* position: static; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%);   */
+  width: 500px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  /* position: absolute; */
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 50px;
+  padding: 2vmin 0;
+  /* position: absolute; */
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #0ae628;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #c20dda;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+/*
+CSS @property and the New Style
+https://ryanmulligan.dev/blog/css-property-new-style/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap");
+
+:root {
+  --shiny-cta-bg: #000000;
+  --shiny-cta-bg-subtle: #1a1818;
+  --shiny-cta-fg: #ffffff;
+  --shiny-cta-highlight: blue;
+  --shiny-cta-highlight-subtle: #8484ff;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-angle-offset {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-percent {
+  syntax: "<percentage>";
+  initial-value: 5%;
+  inherits: false;
+}
+
+@property --gradient-shine {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.shiny-cta {
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 1.25rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  margin-top: 10px;
+  color: var(--shiny-cta-fg);
+  background: linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg))
+      padding-box,
+    conic-gradient(
+        from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+        transparent,
+        var(--shiny-cta-highlight) var(--gradient-percent),
+        var(--gradient-shine) calc(var(--gradient-percent) * 2),
+        var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+        transparent calc(var(--gradient-percent) * 4)
+      )
+      border-box;
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+
+
+
+/* Inner shimmer */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    -50deg,
+    transparent,
+    var(--shiny-cta-highlight),
+    transparent
+  );
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.6;
+}
+
+.shiny-cta span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animate */
+.shiny-cta {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes breathe {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+}
+
+
+.taskdetails{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.addtv{
+  height: 100%;
+  width: 100%;
+}
+
+.td1{
+  padding-right: 300px;
+  
+}
+
+.td1 h1{
+  padding-bottom: 30px;
+  color: salmon;
+}
+
+.td1 p{
+  font-size: 20px;
+  color: #c20dda;
+}
+
+.addtask{
+  margin-top: 150px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.adt1{
+  padding-right: 300px;
+}
+
+.adt1 h1{
+  padding-bottom: 30px;
+  color: salmon;
+}
+
+.adt1 p{
+  font-size: 20px;
+  color: #c20dda;
+}
+
+#main-footer {
+  background-color: #a9b825;
+  color: #1100ff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#main-footer .footer-nav {
+  display: flex;
+  gap: 15px;
+}
+
+#main-footer .footer-nav a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+#main-footer .footer-nav a:hover {
+  color: #ffd700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
